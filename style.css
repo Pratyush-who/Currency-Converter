@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: linear-gradient(135deg, #d4fc79, #96e6a1);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+.container {
+  background-color: #ffffff; /* Clean white background */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+h1 {
+  font-size: 2.2rem;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.amount h2 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+.amount input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s;
+}
+.amount input:focus {
+  border-color: #e67e22;
+  box-shadow: 0px 0px 10px rgba(230, 126, 34, 0.3);
+}
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.from, .to {
+  flex: 1;
+  text-align: center;
+}
+.from p, .to p {
+  font-size: 1rem;
+  font-weight: bold;
+ 
+  margin-bottom: 8px;
+}
+.select-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f4f8;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+}
+.select-container img {
+  width: 32px; 
+  height: 30px; 
+  margin-right: 8px;
+}
+select {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+}
+.switchSides {
+  font-size: 1.5rem;
+  color: #16a085;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  top: 13px;
+}
+
+.switchSides:hover {
+  color: #1abc9c;
+  transform: rotate(180deg);
+}
+
+.msg {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.msg p {
+  font-weight: bold;
+}
+button {
+  background: linear-gradient(135deg, #16a085, #1abc9c);
+  color: white;
+  font-size: 1rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+  transform: scale(1.05);
+}
+button:active {
+  background: #12876f;
+}
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+}
