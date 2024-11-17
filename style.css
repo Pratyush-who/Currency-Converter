@@ -80,6 +80,10 @@ h2 {
   padding: 0.5rem;
   transition: border-color 0.3s;
 }
+.select-container select{
+  background: #2b2b3d;
+  color: white;
+}
 
 .select-container:hover {
   border-color: #00d1ff;
@@ -123,6 +127,7 @@ img {
   padding: 1rem;
   box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
 }
+
 
 button {
   background: linear-gradient(to right, #007bff, #00d1ff);
