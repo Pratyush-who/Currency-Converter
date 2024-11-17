@@ -92,3 +92,19 @@ inputText.addEventListener("input", (e) => {
   );
   console.log(e.target.value);
 });
+
+let isDarkTheme = false;
+
+      function toggleTheme() {
+        const themeButton = document.querySelector('.theme-toggle-btn');
+        const themeStyle = document.getElementById('theme-style');
+        if (isDarkTheme) {
+          themeStyle.setAttribute('href', 'stylee.css');
+          themeButton.innerHTML = '<i class="fa-solid fa-moon"></i>';
+        } else {
+          themeStyle.setAttribute('href', 'style.css'); 
+          themeButton.innerHTML = '<i class="fa-solid fa-sun"></i>';
+        }
+
+        isDarkTheme = !isDarkTheme;
+      }

@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #222;
+    font-weight: 600;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  .amount input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #333;
+    background: #f9f9f9;
+  }
+  
+  .amount input:focus {
+    outline: none;
+    border-color: #007bff;
+    background: #ffffff;
+  }
+  
+  .dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .from, .to {
+    flex: 1;
+  }
+  
+  .select-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.5rem;
+  }
+  
+  select {
+    width: 100%;
+    padding: 0.4rem;
+    border: none;
+    color: #333;
+    font-size: 1rem;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .fa-arrow-right-arrow-left {
+    font-size: 1.5rem;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .fa-arrow-right-arrow-left:hover {
+    color: #0056b3;
+  }
+  
+  .msg {
+    font-size: 1rem;
+    margin: 1rem 0;
+    color: #555;
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  
+  button {
+    background: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  @media (max-width: 600px) {
+    .dropdown {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .from, .to {
+      width: 100%;
+    }
+  }
+  
