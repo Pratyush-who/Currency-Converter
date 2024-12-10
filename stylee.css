@@ -98,11 +98,12 @@
     font-size: 1.5rem;
     color: #007bff;
     cursor: pointer;
-    transition: color 0.3s;
+    transition: transform 0.3s, color 0.3s;
   }
   
   .fa-arrow-right-arrow-left:hover {
     color: #0056b3;
+    transform: rotate(180deg);
   }
   
   .msg {
